@@ -1,0 +1,50 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1200px;
+  background: #faf5f5;
+  box-shadow: 6px 6px 20px 0px #0000001a;
+}
+.block-2 {
+  background: #1e2939;
+  margin: 20px;
+  padding: 20px;
+  min-height: 1200px;
+  color: aliceblue;
+}
+.h2-aside {
+  color: rgb(99, 174, 199);
+}
+
+h1 {
+  font-size: 45px;
+}
+h2 {
+  color: rgb(3, 56, 74);
+  font-size: 22px;
+}
+h3 {
+  color: rgb(218, 103, 49);
+  font-size: 18px;
+}
+.main-description {
+  background: rgb(253, 239, 219);
+  margin: 20px;
+  padding: 20px;
+}
+.description {
+  color: rgb(8, 49, 10);
+  font-size: 14px;
+}
+li {
+  font-size: 14px;
+}
+p {
+  font-size: 14px;
+}
