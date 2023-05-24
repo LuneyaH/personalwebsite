@@ -14,13 +14,19 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <button>English</button>
-    <button>Polish</button>
-    <button>Danish</button>
+    <nav>
+    <div class="button-container">
+      <div class="button-wrapper">
+      <button class="button" style="vertical-align:middle"><span>English</span></button>
+      <button class="button" style="vertical-align:middle"><span>Polish</span></button>
+      <button class="button" style="vertical-align:middle"><span>Danish</span></button>
+      </div>
+    </div>
+    </nav>
     <div class="wrapper">
       <main>
         <div class="main-description">
-          <h3>Hydrogeologist</h3>
+          <h3 class="job-title">Hydrogeologist</h3>
           <h1>Helena Deskur</h1>
           <p class="description">
             MSc in Geology, with specialization in Water and Climate changes.
@@ -32,41 +38,41 @@
             (biochar) and circular enconomy solutions.
           </p>
         </div>
-        <div>
+        <div class="projects">
           <h2>Projects</h2>
-          <ol>
+          <ol class="list-primary">
             <li>
-              <a href="https://barbershop-pl.goit.global/"
+              <a class="list-primary-item" href="https://barbershop-pl.goit.global/"
                 >https://barbershop-pl.goit.global/</a
-              >.......................................[ HTML5, CSS3 ]
+              ><span class="list-primary-item">....................................</span>[<span class="list-primary-item"> HTML5, CSS3</span>] 
             </li>
-            <li>
-              <a href="https://cryptohub.goit.global/"
+            <li class="list-secondary">
+              <a class="list-primary-item" href="https://cryptohub.goit.global/"
                 >https://cryptohub.goit.global/</a
-              >................................................[ JavaScript ]
+              ><span class="list-primary-item">.............................................</span>[<span class="list-primary-item"> JavaScript</span>]
             </li>
-            <li>
-              <a href="https://kidslike.goit.global/"
+            <li class="list-secondary">
+              <a class="list-primary-item" href="https://kidslike.goit.global/"
                 >https://kidslike.goit.global/</a
-              >.......................................................[
-              React.js, Node.js ]
+              ><span class="list-primary-item">....................................................</span>[<span class="list-primary-item"> 
+              React.js, Node.js</span>]
             </li>
           </ol>
         </div>
         <div>
           <h2>Experience</h2>
-          <h3>Intern at NIRAS Water Department</h3>
-          <p>March 2023 - May 2023| Aalborg, Denmark</p>
-          <ul>
+          <h3>Intern <span class="company-name">NIRAS Water</span></h3>
+          <p class="job-date">March 2023 - May 2023| Aalborg, Denmark</p>
+          <ul class="ul-primary">
             <li>Performing water balance assesment for a lake</li>
             <li>Wetland CO2 emission mitigation assessment</li>
             <li>Completing different tasks in QGIS</li>
             <li>Geological modelling in GeoScene 3D</li>
             <li>Learning hydrogeological modelling in FloPy</li>
           </ul>
-          <h3>Laboratory assistant at LOC, Aarhus University</h3>
-          <p>February 2022 - June 2022| Aarhus, Denmark</p>
-          <ul>
+          <h3>Laboratory assistant <span class="company-name">Lithospheric Organic Carbon Lab,<br/>Department of Geoscience, Aarhus University</span></h3>
+          <p class="job-date">February 2022 - June 2022| Aarhus, Denmark</p>
+          <ul class="ul-primary">
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod labore et dolore magna aliqua.
@@ -74,69 +80,77 @@
             <li>Quis ipsum suspendisse ultrices gravida.</li>
             <li>Risus commodo viverra maecenas.</li>
           </ul>
-          <h3>Sushi Chef at Karma Sushi</h3>
-          <p>March 2022 - July 2022| Aarhus, Denmark</p>
-          <ul>
+          <h3>Sushi Chef <span class="company-name">Karma Sushi</span></h3>
+          <p class="job-date">March 2022 - July 2022| Aarhus, Denmark</p>
+          <ul class="ul-primary">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
             <li>Quis ipsum suspendisse ultrices gravida.</li>
             <li>Risus commodo viverra maecenas.</li>
           </ul>
+          <h3>Kitchen assistant/Waiter <span class="company-name">Klassisk Bistro 65</span></h3>
+          <p class="job-date">October 2021 - February 2022| Aarhus, Denmark</p>
+          <ul class="ul-primary">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Quis ipsum suspendisse ultrices gravida.</li>
+            <li>Risus commodo viverra maecenas.</li>
         </div>
         <div>
           <h2>Education</h2>
-          <h3>Master's degree in Geology | Aarhus University, Denmark</h3>
-          <p>September 2020 - October 2022</p>
+          <h3>Master's degree in Geology <span class="company-name">| Aarhus University, Denmark</span></h3>
+          <p class="job-date">September 2020 - October 2022</p>
           <p>
             Specialization: Climate and Water <br />
             Master thesis title: Macroalgal pyrolysis potential for the
             hydrocarbon and biochar production
           </p>
-          <h3>Bachelor's degree in Geology | University of Wroclaw, Poland</h3>
-          <p>October 2017 - August 2020</p>
+          <h3>Bachelor's degree in Geology <span class="company-name">| University of Wroclaw, Poland</span></h3>
+          <p class="job-date">October 2017 - August 2020</p>
         </div>
       </main>
       <aside>
-        <div class="block-2">
-          <img src="cvimage2.png" alt="CV photo of Helena"width="270" />
+        <img class="img-profile" src="cvimage2.png" alt="CV photo of Helena"width="270" />
+        <div class="contact-block">
           <h2 class="h2-aside">Contacts</h2>
-          <p class:p-aside>
-            C: <a href="tel:+45 71 45 15 89 ">+45 71 45 15 89</a><br />
-            E: <a href="mailto:helenadeskur@wp.pl">helenadeskur@wp.pl</a>
+          <p class="p-aside"> <span class="bold">C: </span>
+          <a href="tel:+45 71 45 15 89 ">+45 71 45 15 89</a><br />
+          <span class="bold">E: </span> <a href="mailto:helenadeskur@wp.pl">helenadeskur@wp.pl</a><br />
+          <span class="bold">LinkedIn: </span><a href="https://www.linkedin.com/in/helena-deskur/" target="_blank">Helena Deskur
+            </a href>
           </p>
-          <div>
-            <h2 class="h2-aside">Tech Skills</h2>
-            <ul class:ul-aside>
-              <li>Microsoft Office</li>
-              <li>GIS (QGIS)</li>
-              <li>Geoscene3D</li>
-              <li>MATLAB</li>
-              <li>Python</li>
-              <li>HTML, CSS</li>
-              <li>Modflow GMS</li>
-              <li>Photoshop, Inkscape, GIMP</li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="h2-aside">Soft skills</h2>
-            <ul style="list-style-type: circle">
-              <li>self-motivated and reliable</li>
-              <li>committed and supportive team player</li>
-              <li>good at respectful and professional communication</li>
-              <li>well organized, structured, focused and task-oriented</li>
-              <li>detail-oriented, analytically minded</li>
-              <li>fast learner</li>
-              <li>good at prioritizing tasks</li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="h2-aside">Languages</h2>
-            <ul>
-              <li>English (C1)</li>
-              <li>Danish (B1)</li>
-              <li>Spanish (A2)</li>
-              <li>Polish (C2 - native)</li>
         </div>
+          <div class="tech-skills">
+            <h2 class="h2-aside">Tech Skills</h2>
+            <ul class="ul-aside">
+              <li><span class="ul-aside-item"> Microsoft Office</span></li>
+              <li><span class="ul-aside-item"> GIS (QGIS)</span></li>
+              <li><span class="ul-aside-item"> Geoscene3D</span></li>
+              <li><span class="ul-aside-item"> MATLAB</span></li>
+              <li><span class="ul-aside-item"> Python</span></li>
+              <li><span class="ul-aside-item"> HTML, CSS</span></li>
+              <li><span class="ul-aside-item"> Modflow GMS</span></li>
+              <li><span class="ul-aside-item"> Photoshop, Inkscape, GIMP</span></li>
+            </ul>
+          </div>
+          <div class="soft-skills">
+            <h2 class="h2-aside">Soft Skills</h2>
+            <ul class="ul-aside">
+              <li><span class="ul-aside-item">self-motivated and reliable</span></li>
+              <li><span class="ul-aside-item">committed and supportive team player</span></li>
+              <li><span class="ul-aside-item">good at respectful and professional communication</span></li>
+              <li><span class="ul-aside-item">well organized, structured, focused and task-oriented</span></li>
+              <li><span class="ul-aside-item">detail-oriented, analytically minded</span></li>
+              <li><span class="ul-aside-item">fast learner</span></li>
+              <li><span class="ul-aside-item">good at prioritizing tasks</span></li>
+            </ul>
+          </div>
+          <div class="language-skills">
+            <h2 class="h2-aside">Languages</h2>
+            <ul class="ul-aside">
+              <li><span class="ul-aside-item">English (C1)</span></li>
+              <li><span class="ul-aside-item">Danish (B1)</span></li>
+              <li><span class="ul-aside-item">Spanish (A2)</span></li>
+              <li><span class="ul-aside-item">Polish (C2 - native)</span></li>
+          </div>
       </aside>
-    </div>
   </body>
 </html>

@@ -2,6 +2,54 @@ body {
   font-family: "Montserrat", sans-serif;
   background: white;
 }
+.button-container {
+  position: relative; /* Add relative positioning to the container */
+}
+
+.button-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.button {
+  background-color: rgb(137, 178, 239);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row-reverse;
@@ -11,40 +59,153 @@ body {
   background: #faf5f5;
   box-shadow: 6px 6px 20px 0px #0000001a;
 }
-.block-2 {
+aside {
   background: #1e2939;
   margin: 20px;
   padding: 20px;
   min-height: 1200px;
   color: aliceblue;
 }
-.h2-aside {
-  color: rgb(99, 174, 199);
+.img-profile {
+  margin-top: 25px;
+}
+.contact-block {
+  margin-top: 51px;
+  margin-left: 40px;
+}
+.tech-skills {
+  margin-top: 47px;
+  margin-left: 40px;
+}
+.soft-skills {
+  margin-top: 47px;
+  margin-left: 40px;
+}
+.ul-aside {
+  color: rgb(218, 103, 49);
+  margin-left: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+.ul-aside-item {
+  color: white;
 }
 
-h1 {
-  font-size: 45px;
+.language-skills {
+  margin-top: 47px;
+  margin-left: 40px;
 }
-h2 {
-  color: rgb(3, 56, 74);
-  font-size: 22px;
+a:link {
+  color: rgb(160, 248, 195);
+  background-color: transparent;
+  text-decoration: none;
 }
-h3 {
-  color: rgb(218, 103, 49);
-  font-size: 18px;
+
+a:visited {
+  color: rgb(229, 127, 144);
+  background-color: transparent;
+  text-decoration: none;
+}
+.bold {
+  font-weight: 700;
+}
+.h2-aside {
+  color: rgb(137, 178, 239);
+}
+.p-aside {
+  color: white;
+}
+main {
+  padding: 102px 88px 102px 88px;
 }
 .main-description {
-  background: rgb(253, 239, 219);
-  margin: 20px;
-  padding: 20px;
+  width: 500px;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 .description {
-  color: rgb(8, 49, 10);
+  font-weight: 400
   font-size: 14px;
+  color: rgba(89, 89, 89, 1);
+  text-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.projects {
+  width: 485px;
+  margin-bottom: 51px;
+}
+.list-primary {
+  font-weight: 700;
+  font-size: 14px;
+  line-heiht: 24px;
+  color: black;
+  padding-left: 0;
+  list-style-position: inside;
+}
+.list-primary-item {
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(89, 89, 89, 1);
+
+
+}
+.job-title {
+  color: rgb(3, 56, 74);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  height: 17px;
+}
+h1 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgb(56,56,56);
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-shadow: 0px 0.5px 0.5px rgb(56, 56, 56);
+
+}
+h3 {
+  color: rgb(3, 56, 74);
+  font-size: 20px;
+  line-height: 19.5px;
+  padding-left: 0px;
+  letter-spacing: 0em;
+  text-shadow: 0px 0.5px 0.5px rgb(127, 156, 165);
+}
+.company-name {
+  font-size: 15px;
+  color: rgb(218, 103, 49);
+  text-shadow: 0px 0.5px 0.5px rgb(236, 150, 110);
+}
+.job-date {
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(89, 89, 89, 1);
 }
 li {
   font-size: 14px;
+  padding-left: 0px;
 }
 p {
   font-size: 14px;
 }
+.ul-primary{
+  padding-left: 10px;
+ }
+ .education {
+  margin-top: 50px;
+ }
